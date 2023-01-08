@@ -91,7 +91,7 @@ class TransactionCard extends StatelessWidget {
             subtitle: Text(formatBrDate()),
             trailing: MediaQuery.of(context).size.width > 480
                 ? ElevatedButton.icon(
-                    onPressed: () {},
+                    onPressed: onAction,
                     icon: Icon(
                       Icons.delete_forever,
                       color: Theme.of(context).colorScheme.secondary,

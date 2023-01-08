@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.expense_controller">
    <application
-        android:label="Controle de Despesas"
+        android:label="Despesas"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

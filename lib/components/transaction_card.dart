@@ -89,13 +89,28 @@ class TransactionCard extends StatelessWidget {
               style: textBoldGray(size: 16),
             ),
             subtitle: Text(formatBrDate()),
-            trailing: IconButton(
-              icon: Icon(
-                Icons.delete_forever,
-                color: Theme.of(context).colorScheme.primary,
-              ),
-              onPressed: onAction,
-            ),
+            trailing: MediaQuery.of(context).size.width > 480
+                ? ElevatedButton.icon(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.delete_forever,
+                      color: Theme.of(context).colorScheme.secondary,
+                    ),
+                    label: Text(
+                      "Excluir",
+                      style: textBoldSecondary(
+                        context: context,
+                        size: 18,
+                      ),
+                    ),
+                  )
+                : IconButton(
+                    icon: Icon(
+                      Icons.delete_forever,
+                      color: Theme.of(context).colorScheme.primary,
+                    ),
+                    onPressed: onAction,
+                  ),
           ),
         ),
       ),
